@@ -12,15 +12,26 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
 
 <h2> How to Install and Run the Project </h2> 
 
-1. Required SW
-    - xxx
-    - yyy
-    - xxx
-    - ddd
+1. Required Python Libraries
+    - sklearn (v0.0) - https://scikit-learn.org/stable/ 
+    - nltk (v3.7) - https://www.nltk.org/
+    - numpy (v1.22.3) - https://numpy.org/
+    - pandas (v1.4.2) - https://pandas.pydata.org/
+    - pyLDAvis (v3.3.1) - https://pyldavis.readthedocs.io/en/latest/index.html
+    - matplotlib (v3.4.3) - https://matplotlib.org/
+    - wordcloud (1.8.1) - http://amueller.github.io/word_cloud/
+    - Shapely (v1.8.2) - https://shapely.readthedocs.io/en/stable/index.html
+    - geopandas (v0.11.0) - https://geopandas.org/en/stable/
+    - xgboost (v1.6.1) - https://xgboost.readthedocs.io/en/stable/
     
 3. Notebook Description and Run Order
-    - sdfdf
-    - dfdfg
+    1. DataProcessing.ipynb - 
+    2. AddTopics.ipynb - 
+    3. DataGenerator.ipynb - 
+    4. NLP_Predictions(TFIDF).ipynb - 
+    5. DataFiltering-NoKeywords - 
+    6. DataFiltering-WithKeywords - 
+    7. PlotLaunch.ipynb - 
 
 <h2> Credits </h2> 
 
