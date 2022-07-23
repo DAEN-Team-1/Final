@@ -44,8 +44,8 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
 
 <h2> Credits </h2> 
 
-   1. Teresa Bray
+   1. Teresa Bray - https://github.com/stbray
    2. Kevin Brensike - https://github.com/GarBearII
-   3. Sergio Rego
+   3. Sergio Rego - https://github.com/srego
    4. Douglas Williamson - https://github.com/dougwilliamson
    5. James Woods - https://github.com/jwoods-rpa
