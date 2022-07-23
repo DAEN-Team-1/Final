@@ -24,7 +24,7 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     - geopandas (v0.11.0) - https://geopandas.org/en/stable/
     - xgboost (v1.6.1) - https://xgboost.readthedocs.io/en/stable/
     
-3. Notebook Description and Run Order
+2. Notebook Description and Run Order
     1. DataProcessing.ipynb - 
     2. AddTopics.ipynb - 
     3. DataGenerator.ipynb - 
@@ -32,6 +32,15 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     5. DataFiltering-NoKeywords - 
     6. DataFiltering-WithKeywords - 
     7. PlotLaunch.ipynb - 
+
+3. Exploratory Data Analysis
+    1. eda_basic_all.ipynb - reads original source files (not included here due to size) to do basic EDA
+    2. explore_NOTAM_in_pkl.ipynb - reads notam in pkl after topics and augmented text functions complete; performs EDA on this updated data set
+    3. file_EDA_NOTAM_before_pkl.py - reades original notam data file and performs EDA, focus on start and stop dates by year
+    4. human_annotated_notam_analysis.ipynb - reads labeled data set and performs EDA funcitons; all labeled data between 2016 and 2020
+    5. launch_time_analysis_3.ipynb - reads launch data and notam in pkl after topics and augmented text functions complete; does detailed launch vs notam time analysis
+    6. launch_time_compare_before_pkl.py - reads original launch and notam files without pre-processing; does initial launch vs notam time analysis
+    7. notam_analysis_1.ipynb - detailed eda on the original large notam file
 
 <h2> Credits </h2> 
 
