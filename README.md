@@ -24,16 +24,16 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     - geopandas (v0.11.0) - https://geopandas.org/en/stable/
     - xgboost (v1.6.1) - https://xgboost.readthedocs.io/en/stable/
     
-2. Notebook Description and Run Order
-    1. DataProcessing.ipynb - 
-    2. AddTopics.ipynb - 
-    3. DataGenerator.ipynb - 
-    4. NLP_Predictions(TFIDF).ipynb - 
-    5. DataFiltering-NoKeywords - 
-    6. DataFiltering-WithKeywords - 
-    7. PlotLaunch.ipynb - 
+2. Notebook Descriptions and Run Order (SRC Folder)
+    1. DataProcessing.ipynb - reads in original source files and cleans the columns needed for the model.  Also saves the resulting dataframe as a pickle (.pkl) file.
+    2. AddTopics.ipynb - reads in the .pkl file from the processing step creates a topic model for all NOTAM text.  Topic analysis using pyLDAvis as well as word clouds is also included.  All topic predictions are added to the dataframe and saed as a .pkl file.
+    3. DataGenerator.ipynb - read in .pkl file and uses vaious facet filters to generate a new test dataset used in the classification NLP models.  This dataset is used to augment the given matched dataset from the FAA.  New dataset is saved as .csv file.
+    4. NLP_ModelCompare.ipynb - reads in FAA matched dataset as well as the handmade dataset and creates several classification models using the datasets.  Notebook also contains our model analysis, namely cross validation accuracy plots, recever operating curves (ROC), and Area Under the Curve (AUC).  Model predictions are then added to the dataframe and saved in .pkl file.
+    5. DataFiltering-NoKeywords - performs facet serach for matches using no keywords.  Also shows matchings analysis based on FAA matched set.
+    6. DataFiltering-WithKeywords - performs facet serach for matches using keywords.  Also shows matchings analysis based on FAA matched set.
+    7. PlotLaunch.ipynb - reads in macthed results and allows user to plot any lanuch results and associated NOTAM polygons.
 
-3. Exploratory Data Analysis
+3.  Notebook Descriptions and Run Order (EDA Folder)
     1. eda_basic_all.ipynb - reads original source files (not included here due to size) to do basic EDA
     2. explore_NOTAM_in_pkl.ipynb - reads notam in pkl after topics and augmented text functions complete; performs EDA on this updated data set
     3. file_EDA_NOTAM_before_pkl.py - reads original notam data file and performs EDA, focus on start and stop dates by year
