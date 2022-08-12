@@ -33,7 +33,6 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     6. DataFiltering-WithKeywords - performs facet search for matches using keywords.  Also shows matchings analysis based on FAA matched set.
     7. PlotLaunch.ipynb - reads in macthed results and allows user to plot any launch results and associated NOTAM polygons.
     8. MatchedAnalysis.ipynb - read in .pkl file and FAA annotated matches datasets. Generates Topic and Classification histograms, and prints the E-code message of selected NOTAM to allow comparison of the data between the full unlabelled dataset and the FAA matched dataset.
-    9. NLP_Predictions(TFIDF).ipynb - read in .pkl file and handmade (team generated) 
 
 3.  Notebook Descriptions and Run Order (EDA Folder)
     1. eda_basic_all.ipynb - reads original source files (not included here due to size) to do basic EDA
@@ -44,7 +43,7 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     6. launch_time_compare_before_pkl.py - reads original launch and notam files without pre-processing; does initial launch vs notam time analysis
     7. notam_analysis_1.ipynb - detailed eda on the original large notam file
     8. count_results.py - counts the total number of unique NOTAM matched to launches in our output results/csv file
-    9. ModelIteration.ipynb - used to explore several different classification models (using Colab) on the data set before we selected, and refined, specific models for this project
+
 
 <h2> Credits </h2> 
 
