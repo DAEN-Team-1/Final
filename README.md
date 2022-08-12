@@ -26,12 +26,14 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     
 2. Notebook Descriptions and Run Order (SRC Folder)
     1. DataProcessing.ipynb - reads in original source files and cleans the columns needed for the model.  Also saves the resulting dataframe as a pickle (.pkl) file.
-    2. AddTopics.ipynb - reads in the .pkl file from the processing step creates a topic model for all NOTAM text.  Topic analysis using pyLDAvis as well as word clouds is also included.  All topic predictions are added to the dataframe and saed as a .pkl file.
-    3. DataGenerator.ipynb - read in .pkl file and uses vaious facet filters to generate a new test dataset used in the classification NLP models.  This dataset is used to augment the given matched dataset from the FAA.  New dataset is saved as .csv file.
-    4. NLP_ModelCompare.ipynb - reads in FAA matched dataset as well as the handmade dataset and creates several classification models using the datasets.  Notebook also contains our model analysis, namely cross validation accuracy plots, recever operating curves (ROC), and Area Under the Curve (AUC).  Model predictions are then added to the dataframe and saved in .pkl file.
-    5. DataFiltering-NoKeywords - performs facet serach for matches using no keywords.  Also shows matchings analysis based on FAA matched set.
-    6. DataFiltering-WithKeywords - performs facet serach for matches using keywords.  Also shows matchings analysis based on FAA matched set.
-    7. PlotLaunch.ipynb - reads in macthed results and allows user to plot any lanuch results and associated NOTAM polygons.
+    2. AddTopics.ipynb - reads in the .pkl file from the processing step creates a topic model for all NOTAM text.  Topic analysis using pyLDAvis as well as word clouds is also included.  All topic predictions are added to the dataframe and saved as a .pkl file.
+    3. DataGenerator.ipynb - read in .pkl file and uses various facet filters to generate a new test dataset used in the classification NLP models.  This dataset is used to augment the given matched dataset from the FAA.  New dataset is saved as .csv files.
+    4. NLP_ModelCompare.ipynb - reads in FAA matched dataset as well as the handmade (team generated) dataset and creates several classification models using the datasets.  Notebook also contains our model analysis, namely cross validation accuracy plots, receiver operating curves (ROC), and Area Under the Curve (AUC).  Model predictions are then added to the dataframe and saved in .pkl file.
+    5. DataFiltering-NoKeywords - performs facet search for matches using no keywords (uses topics instead).  Also shows matchings analysis based on FAA matched set.
+    6. DataFiltering-WithKeywords - performs facet search for matches using keywords.  Also shows matchings analysis based on FAA matched set.
+    7. PlotLaunch.ipynb - reads in macthed results and allows user to plot any launch results and associated NOTAM polygons.
+    8. MatchedAnalysis.ipynb - read in .pkl file and FAA annotated matches datasets. Generates Topic and Classification histograms, and prints the E-code message of selected NOTAM to allow comparison of the data between the full unlabelled dataset and the FAA matched dataset.
+    9. NLP_Predictions(TFIDF).ipynb - read in .pkl file and handmade (team generated) 
 
 3.  Notebook Descriptions and Run Order (EDA Folder)
     1. eda_basic_all.ipynb - reads original source files (not included here due to size) to do basic EDA
