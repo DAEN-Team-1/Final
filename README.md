@@ -31,7 +31,7 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     4. NLP_ModelCompare.ipynb - reads in FAA matched dataset as well as the handmade (team generated) dataset and creates several classification models using the datasets.  Notebook also contains our model analysis, namely cross validation accuracy plots, receiver operating curves (ROC), and Area Under the Curve (AUC).  Model predictions are then added to the dataframe and saved in .pkl file.
     5. DataFiltering-NoKeywords - performs facet search for matches using no keywords (uses topics instead).  Also shows matchings analysis based on FAA matched set.
     6. DataFiltering-WithKeywords - performs facet search for matches using keywords.  Also shows matchings analysis based on FAA matched set.
-    7. PlotLaunch.ipynb - reads in macthed results and allows user to plot any launch results and associated NOTAM polygons.
+    7. PlotLaunch.ipynb - reads in matched results and allows user to plot any launch results and associated NOTAM polygons.
     8. MatchedAnalysis.ipynb - read in .pkl file and FAA annotated matches datasets. Generates Topic and Classification histograms, and prints the E-code message of selected NOTAM to allow comparison of the data between the full unlabelled dataset and the FAA matched dataset.
 
 3.  Notebook Descriptions and Run Order (EDA Folder)
