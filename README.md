@@ -42,6 +42,7 @@ The Federal Aviation Administration’s (FAA) Systems Analysis & Requirements Se
     6. launch_time_compare_before_pkl.py - reads original launch and notam files without pre-processing; does initial launch vs notam time analysis
     7. notam_analysis_1.ipynb - detailed eda on the original large notam file
     8. count_results.py - counts the total number of unique NOTAM matched to launches in our output results/csv file
+    9. model_iteration.ipynb - used to explore several different classification models on the data set before we selected, and refined, specific models for this project
 
 <h2> Credits </h2> 
 
